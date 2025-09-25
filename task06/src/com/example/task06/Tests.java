@@ -28,6 +28,7 @@ public class Tests {
         new Task06Main().printMethodName();
         String actual = out.toString();
         actual = actual.replaceAll("\n", "");
+        actual = actual.replaceAll("\r", "");
         Assert.assertEquals("testPrintMethodName", actual);
     }
 
