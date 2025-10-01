@@ -20,9 +20,12 @@ public class Task07Main {
             return NONE;
         } catch (Error | RuntimeException e) {
             return UNCHECKED;
-        } catch (IOException e) {
+        } catch (Exception e) {
             return CHECKED;
         }
+        // Не каждая Exception IOException
+        // Но каждая IOException — Exception
+        // (c) - мудрец
     }
 
 }
